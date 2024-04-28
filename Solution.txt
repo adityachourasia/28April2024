@@ -1,0 +1,35 @@
+Q1 - Why do we use interface reference to a child object
+Answer - Loose Coupling, 
+        Interface reference = new Implemented_Class();
+        With this approach not only this reference variable can hold other implemented class objects but also provide loose coupling. i.e we are limited to call  Interface methods only and NOT any IMPLEMENTED CLASS's methods. Thus if in future one changes the class's methods our code will not we affected.
+
+
+Q2 - Select count(*) from table1,table2
+Answer - Since there is no where clause present to restrict, from table1,table2 query is mapping each row from first table to all rows of second table. thus a new table of m*n size. Then count in counting total rows in the new table formed.  
+
+
+Q3 - How do you create class in js?
+Answer - We can create a new class in javascript by using keyword "class". 
+        class CLASS_NAME {
+                constructor(parameter1, parameter2....){
+                        this.classField1 = parameter1;
+                        this.classField2 = parameter2;
+                        ....
+                }
+
+                FUNCTION_NAME(parameter1, parameter2,....){
+                        .....
+                }
+        }
+
+
+Q4 - How to create module in JS
+Answer - We can use npm to create module in JS.
+        Step1 - run npm init.
+        Step2 - add type : module in package.json
+        Step3 - we can use export keyword to export class, function or even variables
+
+Q5 - How to create module in Angular
+Answer - We can use "ng g m MODULE_NAME" command to create new module. We can use "ng g class CLASS_NAME" command to create class.
+        
+
